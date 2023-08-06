@@ -1,6 +1,7 @@
 import logo from '../../assets/images/logo.png'
 import { Popover, Whisper} from 'rsuite'
 import { useState } from 'react'
+import SearchInput from './SearchInput'
  
 const movietooltip = (
   <Popover className='absolute'>
@@ -34,9 +35,9 @@ function Header() {
   const handleSearchClick = () => {
     setSearchClicked(!isSearchClicked);
   };
-  const searchInput = isSearchClicked ? <input type="text" placeholder="Enter your search" className='flex'/> : null;
+  const searchInput = isSearchClicked ? <SearchInput/> : null;
   return (
-    <div className='h-16 w-full bg-blue-800 flex p-3 items-center justify-between'>
+    <div className='h-16 w-full bg-blue-800 flex p-3 items-center justify-between relative'>
       {/* Logo */}
       <div className='flex'>
       <img src={logo} alt="Logo" className='h-10 mr-1'/>
@@ -71,7 +72,7 @@ function Header() {
     </nav>
 </div>
     {/* Search */}
-    <div>
+    <div className=''>
     <div onClick={handleSearchClick}>
         {svgToRender}
       </div>
