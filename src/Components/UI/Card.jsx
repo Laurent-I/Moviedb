@@ -20,10 +20,10 @@ export default function Card() {
           <img className="rounded-lg h-60" src={movieImage} alt="" />
         </a>
         <div
-          className="absolute bottom-0 left-0 right-0 flex flex-col justify-center items-center p-5"
+          className="absolute bottom-0 left-0 right-0 flex flex-col justify-center items-center p-5 shadow-lg rounded-md bg-gray-900 bg-opacity-50"
           style={{ backdropFilter: "blur(10px)" }}
         >
-          <h5 className="mb-1 text-md font-bold tracking-tight text-white hover:text-blue-600 text-opacity-70 ">
+          <h5 className="mb-1 text-md font-bold tracking-tight text-white hover:text-blue-600 text-opacity-70 cursor-pointer">
             Oppenheimer
           </h5>
           <p className="mb-3 text-sm font-normal text-gray-200 text-opacity-70">
