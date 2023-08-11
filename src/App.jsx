@@ -1,8 +1,7 @@
-import { useState } from "react";
 import "./App.css";
 import Header from "./Components/Header/Header";
-import Card from "./Components/UI/Card";
 import Poster from "./Components/Navbar/Poster";
+import MovieList from "./Components/Movies/MovieList";
 
 function App() {
   return (
@@ -11,6 +10,7 @@ function App() {
     <Header />
       {/* <Card /> */}
       <Poster/>
+      <MovieList/>
     </div> 
   );
 }

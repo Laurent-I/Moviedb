@@ -1,4 +1,3 @@
-import poster from '../../assets/images/poster.jpg'
 // import styles from './Poster.module.css'
 import PosterSearch from './PosterSearch'
 
