@@ -5,15 +5,10 @@ import Card from "./Components/UI/Card";
 import Poster from "./Components/Navbar/Poster";
 
 function App() {
-  const [isOpen ,setIsOpen] = useState(false)
-
-  const onClickHandler = () =>{
-    setIsOpen(false)
-  }
   return (
     
-    <div onClick={onClickHandler} className="font-mono" >
-    <Header open = {isOpen}/>
+    <div className="font-mono" >
+    <Header />
       {/* <Card /> */}
       <Poster/>
     </div> 

@@ -4,19 +4,17 @@ import PosterSearch from './PosterSearch'
 
 const Poster = () => {
   return (
-    <div className='flex items-center justify-center relative '>
-        <div className='h-2/4 w-2/3 relative '>
-        <div className='absolute  flex flex-wrap font-mono m-5 flex-col  opacity-100'>
-            <h1 className='font-extrabold text-6xl py-4 '>Welcome.</h1>
-            <p className='font-extrabold text-2xl mb-4'>Millions of movies, TV shows and people to discover. Explore now.</p>
-            {/*Search*/}
+    
+<section className=" bg-cover bg-no-repeat bg-[url('https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,00192f,00baff)/6UH52Fmau8RPsMAbQbjwN3wJSCj.jpg')] bg-gray-700 bg-blend-multiply">
+    <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Welcome.</h1>
+        <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Millions of movies, TV shows and people to discover. Explore now.</p>
+        <div>
             <PosterSearch/>
         </div>
-
-        <img src={poster} alt="Poster" className/>
-        </div>
-       
     </div>
+</section>
+
   )
 }
 
