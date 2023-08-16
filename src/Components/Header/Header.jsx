@@ -1,7 +1,8 @@
-import logo from '../../assets/images/logo.png'
+// import logo from '../../assets/images/logo.png'
 import { Popover, Whisper} from 'rsuite'
 import { useState } from 'react'
 import SearchInput from './SearchInput'
+import Eyes from '../UI/Eyes'
  
 const movietooltip = (
   <Popover className='absolute'>
@@ -40,7 +41,8 @@ function Header() {
     <div className='h-16 w-full bg-blue-800 flex p-3 items-center justify-between relative'>
       {/* Logo */}
       <div className='flex'>
-      <img src={logo} alt="Logo" className='h-10 mr-1'/>
+      {/* <img src={logo} alt="Logo" className='h-10 mr-1'/> */}
+      <Eyes/>
         <p className='font-bold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-green-500 to-blue-400 mr-4'>WATCHZY</p>
       </div>
         
