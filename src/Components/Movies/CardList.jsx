@@ -85,10 +85,9 @@ const cardData = [
   
   const CardList = () => {
     return (
-        <div className='overflow-x-scroll'>
-        <div className='grid grid-cols-6 gap-6 p-6'>
+        <div className='flex'>
           {cardData.map((card, index) => (
-            <div key={index} className='mb-6'>
+              <div key={index} className='flex-none w-40 p-2'>
               <Card
                 image={card.image}
                 title={card.title}
@@ -98,7 +97,6 @@ const cardData = [
             </div>
           ))}
         </div>
-      </div>
       
     );
   };
